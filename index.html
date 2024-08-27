@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador/Desencriptador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img src="imagenes/Logo.png" alt="Logo Alura">
+  </header>
+
+  <main>
+    <section class="input-section">
+      <textarea class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+      <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+      <div class="botones">
+        <button class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+        <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+      </div>
+    </section>
+
+    <section class="output-section">
+    <div class="mensaje-container">
+      <img src="imagenes/muneco.png" alt="muñeco" class="mensaje-imagen">
+      <textarea class="mensaje" readonly></textarea>
+    </div>
+      <div class="botones">
+        <button class="boton-copiar" onclick="btnCopiar()">Copiar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Encriptador de Texto - Desarrollado por Nicolás Rúa 2024. Colombia</p>
+    <a href="https://www.linkedin.com/in/nicolas-rua-villalobos/" rel=""><img src="./imagenes/linkedin.svg" alt="Logo LinkedIn" class="linked"></a>
+    <a href="https://github.com/NicolasRua" rel=""><img src="./imagenes/github.svg" alt="Logo Github" class="git"></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

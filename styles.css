@@ -1,0 +1,151 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  font-size: 100%;
+  font-weight: 100%;
+  line-height: 48px;
+ }
+
+ .Logo {
+   padding-top: 10px;
+   margin-left: 10px;
+   width: 10%;
+ }
+
+ body {
+   background: #F3F5FC;
+   padding: 20px;
+   font-size: 16px;
+   line-height: 1.5;
+ }
+
+ header {
+   text-align: left;
+   margin-bottom: 20px;
+ }
+
+ header img {
+  margin-bottom: 20px;
+ }
+
+ main {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+
+ .output-section {
+   position: relative;
+   width: 100%;
+ }
+
+ .mensaje-container {
+   position: relative;
+   width: 100%;
+   min-height: 200px;
+ }
+
+ .mensaje-imagen {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 80%;
+   max-height: 80%;
+   opacity: 1;
+   transition: opacity 0.3s ease;
+ }
+
+ .text-area, .mensaje {
+   width: 100%;
+   margin-top: 20px;
+   padding: 20px;
+   border: none;
+   border-radius: 8px;
+   font-size: 1rem;
+ }
+
+ .text-area {
+   background: transparent;
+   color: #0A3871;
+ }
+
+ .mensaje {
+   background: white;
+   min-height: 200px;
+ }
+
+ .mensaje:not(:placeholder-shown)+.mensaje-imagen {
+   opacity: 0;
+ }
+
+ .texto-aviso {
+   font-size: 14px;
+   color: #495057;
+   margin-bottom: 10px;
+ }
+
+ .botones {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 20px;
+ }
+
+ .btn {
+   padding: 10px 20px;
+   border: none;
+   border-radius: 24px;
+   font-size: 80%;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+
+ .boton-encriptar {
+  background-color: #0A3871;
+  color: white;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 25%;
+  width: 55%;
+ }
+
+ .boton-desencriptar,
+ .boton-copiar {
+  background-color: #D8DFE8;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 25%;
+  width: 55%;
+ }
+
+ .boton-copiar{
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+ }
+
+ .btn:hover {
+   opacity: 0.9;
+ }
+
+ footer {
+   text-align: center;
+   margin-top: 20px;
+   font-size: 14px;
+ }
+
+ @media (min-width: 768px) {
+   main {
+     flex-direction: row;
+   }
+
+   main>section {
+     flex: 1;
+   }
+ }
